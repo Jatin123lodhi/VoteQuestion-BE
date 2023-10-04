@@ -19,11 +19,12 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server,{
   cors:{
-      origin: [
-        "https://peppy-sherbet-a0460b.netlify.app", // admin frontend
-        "http://localhost:5174",  // client frontend
-      ],
-      methods: ["GET","POST","PUT","DELETE"]
+      origin: "*"
+      // origin: [
+      //   "https://peppy-sherbet-a0460b.netlify.app", // admin frontend
+      //   "http://localhost:5174",  // client frontend
+      // ],
+      // methods: ["GET","POST","PUT","DELETE"]
   }
 })
 
