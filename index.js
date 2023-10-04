@@ -10,7 +10,7 @@ const { SECRET } = require("./middleware/auth");
 const { authenticateJwt } = require("./middleware/auth");
 const cors = require("cors");
 const { error } = require("console");
-const { ALLOWED_ORIGINS } = require("./constants");
+
 const app = express();
 
 app.use(express.json());
